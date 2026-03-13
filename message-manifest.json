@@ -2,7 +2,7 @@
   "name": "The Message",
   "short_name": "The Message",
   "description": "The Message — Logos Bible Study App",
-  "start_url": "./",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#111111",
   "theme_color": "#111111",

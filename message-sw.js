@@ -1,7 +1,7 @@
 const CACHE_NAME = 'the-message-v1';
 const ASSETS = [
   './',
-  './the-message.html',
+  './index.html',
   './message-manifest.json',
   './message-icon-192.png',
   './message-icon-512.png'
@@ -19,7 +19,7 @@ self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(cached => {
       return cached || fetch(e.request).catch(() => {
-        if (e.request.mode === 'navigate') return caches.match('./the-message.html');
+        if (e.request.mode === 'navigate') return caches.match('./index.html');
       });
     })
   );
