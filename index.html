@@ -1205,24 +1205,13 @@ function fallbackCopy(text){
 function getApiKey() { return localStorage.getItem('tmsg_apikey') || ''; }
 
 const FREE_MODELS = [
-  'openrouter/auto',
-  'openrouter/free',
-  'meta-llama/llama-3.3-70b-instruct:free',
-  'meta-llama/llama-3.1-8b-instruct:free',
-  'meta-llama/llama-3.2-3b-instruct:free',
-  'meta-llama/llama-3.2-1b-instruct:free',
-  'mistralai/mistral-7b-instruct:free',
+  'arcee-ai/trinity-large-preview:free',
+  'arcee-ai/trinity-mini:free',
+  'nvidia/nemotron-3-super-120b-a12b:free',
+  'nvidia/nemotron-3-nano-30b-a3b:free',
   'mistralai/mistral-small-3.1-24b-instruct:free',
-  'mistralai/mistral-nemo:free',
-  'qwen/qwen3-8b:free',
-  'qwen/qwen3-14b:free',
-  'qwen/qwen2.5-7b-instruct:free',
-  'deepseek/deepseek-r1-0528-qwen3-8b:free',
-  'deepseek/deepseek-chat-v3-0324:free',
-  'microsoft/phi-4-reasoning-plus:free',
-  'microsoft/phi-3-mini-128k-instruct:free',
-  'nvidia/llama-3.1-nemotron-nano-8b-v1:free',
-  'tngtech/deepseek-r1t-chimera:free'
+  'z-ai/glm-4.5-air:free',
+  'liquid/lfm-2.5-1.2b-instruct:free',
 ];
 
 async function callOR(messages, max) {
